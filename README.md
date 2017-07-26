@@ -14,9 +14,9 @@ To test, this program toggles a GPIO pin in the ISR. There are other effects in 
 
 Top row: divisor (PWM prescaler). Column: PWM comparator value. 
 
-|  | 0 | 1 | 10 | 
-| --- | --- | --- | --- |
-| 10000 | 3817uS (262Hz) | | |
-| 1000 | | | |
-| 100 | | | |
-| 10 | | | |
+|       |  0         |  1  |  10 | 
+| ---   |    ---     | --- | --- |
+| 10000 | 38.17 uS (26,200 Hz)  | 76.33 uS (13,200 Hz)    | 39062.5 uS (25.6 Hz) |
+| 1000  | 3.817 uS (262,000 Hz) | 7.633 uS (132,000 Hz) | 3906.25 uS (256Hz) |
+| 100   | 0.3168 uS (2,620,000 Hz) | 0.7633 uS (1,320,000 Hz) | 390.625 uS (2,560 Hz) |
+| 10    | 0.03168 uS (26,200,000 Hz) | 0.07633 uS (13,200,000 Hz) | 39.0625 uS (25,600 Hz) |
